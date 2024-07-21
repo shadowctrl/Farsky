@@ -4,15 +4,34 @@
   align-items: center;
   gap: 2vw;
   padding-bottom: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+  }
 }
-.yt-video {
+.yt-video-main {
   padding-top: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-top: 5vh;
+  }
 }
 
+.yt-video {
+  width: 730px;
+  height: 408px;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 90vw;
+    height: fit-content;
+  }
+}
 .req-head {
   color: white;
   text-decoration: underline;
   padding-top: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-top: 5vh;
+  }
 }
 .main-req {
   display: flex;

@@ -3,10 +3,9 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="main-sub-section">
-      <div className="yt-video">
+      <div className="yt-video-main">
         <iframe
-          width="730"
-          height="408"
+          className="yt-video"
           src="https://www.youtube.com/embed/9to_cEmTS0o?si=PvWaZIKCRCxAuXVF"
           title="YouTube video player"
           frameBorder="0"
