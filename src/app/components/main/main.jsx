@@ -3,8 +3,13 @@ import Link from "next/link";
 import Navbar from "@/app/components/navbar";
 import farsky from "@/assets/farsky.png";
 import Footer from "@/app/components/footer/footer";
-
-export default function Main({ backgroundImage, gridItems, paragraph }) {
+import paraImg from "@/assets/para.jpg";
+export default function Main({
+  backgroundImage,
+  gridItems,
+  paragraph,
+  isparaImg = false,
+}) {
   return (
     <div className="App">
       <div
@@ -23,7 +28,10 @@ export default function Main({ backgroundImage, gridItems, paragraph }) {
           </Link>
           <h2 className="farsky-h2">Single Player</h2>
           <h2 className="farsky-h2">PC, Mac and Linux</h2>
-          <p className="farsky-p1">{paragraph}</p>
+          <p className="farsky-p1">
+            {paragraph}
+            {isparaImg ? <Image src={paraImg} width={200} height={112} /> : ""}
+          </p>
         </div>
       </div>
       <div className="main-section2">

@@ -8,8 +8,16 @@ const gridItems = [
   { image: grid25, content: "" },
   { image: grid26, content: "" },
 ];
+const paragraph = `Follow Theo's dizzying adventure in first-person platformer "The Free Ones". Soar through the air with your grapple, blaze a trail through the canyons and take part in an extraordinary story.`;
 const Thefreeones = () => {
-  return <Main backgroundImage={"/bg2.jpg"} gridItems={gridItems} />;
+  return (
+    <Main
+      backgroundImage={"/bg2.jpg"}
+      gridItems={gridItems}
+      paragraph={paragraph}
+      isparaImg={true}
+    />
+  );
 };
 
 export default Thefreeones;

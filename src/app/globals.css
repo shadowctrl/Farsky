@@ -44,6 +44,8 @@ color: white;
 font-family: inherit;
 font-weight: 300;
 padding-right: 5vw;
+display: flex;
+align-items: center;
 }
 
 .main-grid{
