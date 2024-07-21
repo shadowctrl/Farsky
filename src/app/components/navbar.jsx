@@ -1,18 +1,38 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import "./navbar.css";
 
 const Navbar = () => {
+  useEffect(() => {
+    const navLinks = document.querySelectorAll("#nav-item-h2");
+    navLinks.forEach((link) => {
+      if (link.pathname === window.location.pathname)
+        link.classList.add("navbar-h2-active");
+    });
+  }, []);
   return (
     <div className="navbar-parent">
       <div className="navbar-main">
         <Image src="/logo.png" width={242} height={38} />
         <div>
           <h2>
-            <Link href="/">FarSky</Link>
+            <Link href="/" id="nav-item-h2">
+              FarSky
+            </Link>
           </h2>
-          <h2>Sky Break</h2>
-          <h2>The Free Ones</h2>
+          <h2>
+            <Link href="/skybreak" id="nav-item-h2">
+              {" "}
+              Sky Break{" "}
+            </Link>
+          </h2>
+          <h2>
+            <Link href="/thefreeones" id="nav-item-h2">
+              The Free Ones
+            </Link>
+          </h2>
         </div>
       </div>
     </div>

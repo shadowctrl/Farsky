@@ -1,0 +1,29 @@
+.main-sub-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding-bottom: 10vh;
+}
+.yt-video {
+  padding-top: 10vh;
+}
+
+.req-head {
+  color: white;
+  text-decoration: underline;
+  padding-top: 10vh;
+}
+.main-req {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  color: white;
+  font-size: 15px;
+  padding-top: 3vh;
+}
+
+.main-req h2 {
+  font-weight: 600;
+  font-family: inherit;
+}
