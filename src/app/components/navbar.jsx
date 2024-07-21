@@ -15,7 +15,10 @@ const Navbar = () => {
   return (
     <div className="navbar-parent">
       <div className="navbar-main">
-        <Image src="/logo.png" width={242} height={38} />
+        <Link href="/">
+          {" "}
+          <Image src="/logo.png" width={242} height={38} />
+        </Link>
         <div>
           <h2>
             <Link href="/" id="nav-item-h2">
