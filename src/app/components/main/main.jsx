@@ -9,6 +9,8 @@ export default function Main({
   gridItems,
   paragraph,
   isparaImg = false,
+  videoSrc,
+  titleImg,
 }) {
   return (
     <div className="App">
@@ -18,7 +20,7 @@ export default function Main({
       >
         <Navbar />
         <div className="hero-main">
-          <Image src={farsky} width={200} height={91} alt="farsky" />
+          <Image src={titleImg} width={200} height={91} alt="farsky" />
           <Link
             href="https://store.steampowered.com/app/286340/FarSky/"
             target="_blank"
@@ -50,7 +52,7 @@ export default function Main({
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer videoSrc={videoSrc} />
     </div>
   );
 }

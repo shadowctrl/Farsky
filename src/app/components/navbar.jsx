@@ -22,7 +22,7 @@ const Navbar = () => {
         </Link>
         <div>
           <h2>
-            <Link href="/" id="nav-item-h2">
+            <Link href="/farsky" id="nav-item-h2">
               FarSky
             </Link>
           </h2>

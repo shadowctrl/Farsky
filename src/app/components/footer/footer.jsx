@@ -1,12 +1,12 @@
 import "./footer.css";
 
-const Footer = () => {
+const Footer = ({ videoSrc }) => {
   return (
     <div className="main-sub-section">
       <div className="yt-video-main">
         <iframe
           className="yt-video"
-          src="https://www.youtube.com/embed/9to_cEmTS0o?si=PvWaZIKCRCxAuXVF"
+          src={videoSrc}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
