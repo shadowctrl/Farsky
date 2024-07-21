@@ -13,6 +13,12 @@ const Navbar = () => {
         link.classList.add("navbar-h2-active");
     });
   }, []);
+
+  const handleClick = () => {
+    const ele2 = document.querySelector("#nav-container-mobile");
+    ele2.classList.toggle("nav-container-active");
+    ele2.classList.toggle("nav-container-mobile");
+  };
   return (
     <div className="navbar-parent">
       <div className="navbar-main">
@@ -38,6 +44,19 @@ const Navbar = () => {
             </Link>
           </h2>
         </div>
+        <MenuIcon onClick={handleClick} style={{ fontSize: "9vw" }} />
+      </div>
+      <div id="nav-container-mobile" className="nav-container-mobile">
+        <Link href="/farsky" id="nav-item-h2">
+          FarSky
+        </Link>
+        <Link href="/skybreak" id="nav-item-h2">
+          {" "}
+          Sky Break{" "}
+        </Link>
+        <Link href="/thefreeones" id="nav-item-h2">
+          The Free Ones
+        </Link>
       </div>
     </div>
   );
