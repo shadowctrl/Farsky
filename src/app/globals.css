@@ -8,6 +8,31 @@ body {
   --color-navbar: #e8e6e3;
 }
 
+.home{
+display: flex;
+justify-content: center;
+align-items: center;
+height:90%;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  flex-direction: column;
+  gap: 2vh;
+}
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+.mob-image-home{
+width: 227px;
+height: auto;
+}
+}
+
+.home a:hover{
+  transition: all 0.2s ease-in-out;
+scale: 1.1;
+}
+.home-parent{
+background-image: url('/bg4.jpg');
+height: 100vh;
+}
 .App{
   background-color: rgb(0, 3, 13);
   height: 100%;
