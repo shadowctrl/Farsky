@@ -68,7 +68,6 @@ padding-right: 5vw;
 padding-left: 5vw;
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   grid-template-columns: auto;
-  padding-top: 25vh;
 }
 }
 

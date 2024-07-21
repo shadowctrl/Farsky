@@ -21,7 +21,7 @@
   width: 730px;
   height: 408px;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    width: 90vw;
+    width: max-content;
     height: fit-content;
   }
 }
@@ -40,6 +40,9 @@
   color: white;
   font-size: 15px;
   padding-top: 3vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    gap: 3vh;
+  }
 }
 
 .main-req h2 {

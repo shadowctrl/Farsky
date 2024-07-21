@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import "./navbar.css";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   useEffect(() => {

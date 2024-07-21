@@ -38,7 +38,13 @@ export default function Main({
         <div className="main-grid">
           {gridItems.map((item, index) => (
             <div className="grid-item" key={index}>
-              <Image src={item.image} width={350} height={197} alt="Grid" />
+              <Image
+                src={item.image}
+                width={350}
+                height={197}
+                alt="Grid"
+                className="grid-image"
+              />
               <p>{item.content}</p>
             </div>
           ))}
