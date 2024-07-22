@@ -8,29 +8,34 @@ const Home = () => {
     <div className="home-parent">
       <Navbar />
       <div className="home">
-        <Link href={"/farsky"}>
-          <Image
-            src={"/farsky.png"}
-            width={327}
-            height={450}
-            className="mob-image-home"
-          />
-        </Link>
-        <Link href={"/skybreak"}>
-          <Image
-            src={"/skybreak.png"}
-            width={327}
-            height={450}
-            className="mob-image-home"
-          />
-        </Link>
-        <Link href={"/thefreeones"}>
-          <Image
-            src={"/thefreeones.png"}
-            width={327}
-            height={450}
-            className="mob-image-home"
-          />
+        <div className="home-elements">
+          <Link href={"/farsky"}>
+            <Image
+              src={"/farsky.png"}
+              width={327}
+              height={450}
+              className="mob-image-home"
+            />
+          </Link>
+          <Link href={"/skybreak"}>
+            <Image
+              src={"/skybreak.png"}
+              width={327}
+              height={450}
+              className="mob-image-home"
+            />
+          </Link>
+          <Link href={"/thefreeones"}>
+            <Image
+              src={"/thefreeones.png"}
+              width={327}
+              height={450}
+              className="mob-image-home"
+            />
+          </Link>
+        </div>
+        <Link href={"/contact"}>
+          <button>contact</button>
         </Link>
       </div>
     </div>

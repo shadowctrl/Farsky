@@ -44,7 +44,11 @@ const Navbar = () => {
             </Link>
           </h2>
         </div>
-        <MenuIcon onClick={handleClick} style={{ fontSize: "9vw" }} />
+        <MenuIcon
+          onClick={handleClick}
+          style={{ fontSize: "9vw" }}
+          className="nav-menu"
+        />
       </div>
       <div id="nav-container-mobile" className="nav-container-mobile">
         <Link href="/farsky" id="nav-item-h2">

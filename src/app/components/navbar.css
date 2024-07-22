@@ -3,8 +3,16 @@
   background-color: rgba(0, 0, 0, 0.8);
   padding: 8px 16px;
   position: static;
-  height: fit-content;
 }
+
+.nav-menu {
+  display: none;
+  color: white;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: block;
+  }
+}
+
 .nav-container-active {
   padding-top: 2vh;
   padding-bottom: 1vh;
